@@ -41,10 +41,10 @@ while game_is_on:
         score.game_over()
 
     #detect collision with self
-    for segment in snake.segments:
-        if segment == snake.head:
-            pass
-        elif snake.head.distance(segment)< 10:
+    # segments is sliced using SLICING : [1:] giving us everthing in the list
+    # except for the first item
+    for segment in snake.segments[1:]:
+        if snake.head.distance(segment)< 10:
             game_is_on = False
             score.game_over()
 
