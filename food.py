@@ -6,6 +6,7 @@ class Food(Turtle):
 
     def __init__(self):
         super().__init__()
+        #making food a turtle instead of dot
         self.shape('turtle')
         self.penup()
         self.shapesize(stretch_len=0.5, stretch_wid=0.5)

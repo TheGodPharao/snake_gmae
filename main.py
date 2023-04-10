@@ -41,6 +41,7 @@ while game_is_on:
         score.game_over()
 
     #detect collision with self
+    # Slicing is an important trick to learn!!!
     # segments is sliced using SLICING : [1:] giving us everthing in the list
     # except for the first item
     for segment in snake.segments[1:]:
